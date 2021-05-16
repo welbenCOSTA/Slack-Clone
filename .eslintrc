@@ -7,7 +7,7 @@
     "plugin:react/recommended",
     "airbnb",
     "prettier",
-    "prettier/react"
+    "plugin:prettier/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -24,7 +24,8 @@
   "plugins": [
     "react-hooks",
     "react",
-    "prettier"
+    "prettier",
+    "@babel"
   ],
   "rules": {
     "react/jsx-props-no-spreading": "off",
@@ -34,6 +35,11 @@
     "react/jsx-filename-extension": [1,{"extensions": [".js", ".jsx"]}],
     "camelcase": "off",
     "import/prefer-default-export": "off",
-    "jsx-quotes": ["error", "prefer-single"]
+    "jsx-quotes": ["error", "prefer-single"],
+    "@babel/new-cap": "error",
+    "@babel/no-invalid-this": "error",
+    "@babel/no-unused-expressions": "error",
+    "@babel/object-curly-spacing": "error",
+    "@babel/semi": "error"
   }
 }
